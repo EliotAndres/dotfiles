@@ -1,0 +1,50 @@
+[user]
+	name = EliotAndres
+	email = eliota@bamlab.fr
+[color]
+    branch      = auto
+    diff        = auto
+    interactive = auto
+    status      = auto
+    ui          = auto
+[push]
+	default = current
+[alias]
+    clo = clone
+    co  = checkout
+    st  = status
+    pur = pull --rebase
+    pro = pull --rebase origin
+    ci  = commit
+    ct  = commit -m
+    rc  = rebase --continue
+    lg2  = log -M --decorate --graph
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    br  = branch
+    sth = stash
+    fu  = fetch upstream
+    cobra = !"git fetch upstream; git co upstream/develop; git co -b "
+    pr = pull-request
+    rbm = pull --rebase origin master
+[core]
+	editor = vim
+    excludesfile = ~/.gitexcludes
+	autocrlf = input
+	trustctime = false
+[diff]
+    tool = diffuse
+[difftool]
+    prompt = false
+[branch]
+	autosetuprebase = always
+[init]
+    templatedir = ~/.gittemplate
+[mergetool]
+	keepBackup = false
+	trustExitCode = true
+[rerere]
+	enabled = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
