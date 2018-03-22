@@ -1,6 +1,6 @@
 [user]
 	name = EliotAndres
-	email = eliot@mbr-targeting.com
+	email = eliot.andres@eleves.enpc.fr
 [color]
     branch      = auto
     diff        = auto
@@ -28,7 +28,7 @@
     rbm = pull --rebase origin master
 [core]
 	editor = vim
-    excludesfile = ~/.gitexcludes
+	excludesfile = ~/.gitignore
 	autocrlf = input
 	trustctime = false
 [diff]

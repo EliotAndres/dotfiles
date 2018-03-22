@@ -15,7 +15,7 @@ unalias gcf 2>/dev/null
 unalias gcb 2>/dev/null
 
 alias ga="$GIT add"
-alias gap="$GIT add -p"
+alias gap="$GIT add --intent-to-add . && $GIT add -p"
 alias gau="$GIT add -u"
 alias gb="$GIT branch"
 alias gB="$GIT branch -f"
