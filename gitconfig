@@ -52,3 +52,5 @@
 	autosquash=true
 [interactive]
 	singlekey=true
+[pull]
+	rebase = true
